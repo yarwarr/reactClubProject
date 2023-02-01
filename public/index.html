@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  
+  <h1 align="center"><font face="Verdana" font-weight="Bold" font-size="36px">SWEN-344 Web Assignment 0</font></h1>
+  <h2 align="center"><font face="Impact">Section-02</Font></h2>
+  <meta charset="utf-8">
+  <meta name="description" content="First web assignment">
+  <meta name="author" content="Mubashar">
+  <script>
+    function changeSelect() {
+      if (document.getElementById("nightclubs").value == "Club Arcane") {
+        document.getElementById("info").innerHTML = "Name: Club Arcane<br>Location: 24 Bogart Street<br>Capacity: 60<br>Theme: Pop";
+        document.getElementById("info").style.backgroundColor = "black";
+        document.getElementById("info").style.color = "white";
+      }
+      else if (document.getElementById("nightclubs").value == "Club Underground") {
+        document.getElementById("info").innerHTML = "Name: Club Underground<br>Location: 44 Matilda Street<br>Capacity: 40<br>Theme: Pop";
+        document.getElementById("info").style.backgroundColor = "blue";
+        document.getElementById("info").style.color = "white";
+      }
+      else if (document.getElementById("nightclubs").value == "Club Soda") {
+        document.getElementById("info").innerHTML = "Name: Club Soda<br>Location: 112 Downtown Street<br>Capacity: 100<br>Theme: Country";
+        document.getElementById("info").style.backgroundColor = "green";
+        document.getElementById("info").style.color = "white";
+      }
+      else if (document.getElementById("nightclubs").value == "Studio 52") {
+        document.getElementById("info").innerHTML = "Name: Studio 52<br>Location: 1234 Lahore Street<br>Capacity: 20<br>Theme: Hip Hop";
+        document.getElementById("info").style.backgroundColor = "orange";
+        document.getElementById("info").style.color = "white";
+      }
+      else if (document.getElementById("nightclubs").value == "Ciro's") {
+        document.getElementById("info").innerHTML = "Name: Ciro's<br>Location: 111 Rochester Street<br>Capacity: 80<br>Theme: Country";
+        document.getElementById("info").style.backgroundColor = "red";
+        document.getElementById("info").style.color = "black";
+      }
+      else if (document.getElementById("nightclubs").value == "Paradisio Garage") {
+        document.getElementById("info").innerHTML = "Name: Paradisio Garage<br>Location: 113 Bogart Street<br>Capacity: 90<br>Theme: Rock";
+        document.getElementById("info").style.backgroundColor = "yellow";
+        document.getElementById("info").style.color = "black";
+      }
+    }
+  </script>
+  </head>
+  <title>Web Assignment 0</title>
+  <div class="container">
+    <body align="center"></body>
+    <label for="nightclubs">Choose a nightclub:</label>
+
+    <select name="nightclubs" id="nightclubs">
+      <option value=""></option>
+      <option value="Club Arcane">Club Arcane</option>
+      <option value="Club Underground">Club Underground</option>
+      <option value="Club Soda">Club Soda</option>
+      <option value="Studio 52">Studio 52</option>
+      <option value="Ciro's">Ciro’s</option>
+      <option value="Paradisio Garage">Paradisio Garage</option>
+    </select>
+  </div>
+  
+    <center>
+        <div id="info" style="width: 250px; height: 150px; border: 1px solid black; background-color: #808080; padding: 10px; margin: 10px; font-family: Verdana; font-size: 12px; text-align: left;">
+            <script>
+                document.getElementById("nightclubs").onchange = changeSelect;
+            </script>
+        </div>
+    </center>
+
+  
+
+
+
+</body>
+
+</html>

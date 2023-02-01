@@ -1,0 +1,162 @@
+body {
+  font-family: "Segoe UI";
+  background-color: antiquewhite;
+}
+.headingOne {
+  text-align: center;
+  font-weight: bold;
+}
+.subHeading {
+  text-align: center;
+}
+
+.labels1 {
+  display: grid;
+  column-gap: 10px;
+  align-items: center;
+}
+.Arcane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 175px;
+  border: 3px solid black;
+  width: 175px;
+  border-radius: 5%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  
+  background-color: cyan;
+}
+.Paradisio {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 175px;
+  border: 3px solid black;
+  border-radius: 5%;
+  width: 175px;
+  background-color: cyan;
+}
+
+.Underground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 175px;
+  border: 3px solid black;
+  border-radius: 5%;
+  width: 175px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: cyan;
+}
+
+.Soda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 175px;
+  border: 3px solid black;
+  border-radius: 5%;
+  width: 175px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-color: cyan;
+}
+.labels2 {
+    display: grid;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.ArcaneCount{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    
+    width: 175px;
+}
+
+.ParadisioCount{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    
+    width: 175px;
+}
+.UndergroundCount{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    
+    width: 175px;
+}
+.SodaCount{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    
+    width: 175px;
+}
+
+.options{
+   
+    /* align-items: center; */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-items: left;
+    /* justify: left; */
+    
+}
+.radio{
+    text-align: center;
+    justify-content: left;
+}
+.buttons{
+  display: grid;
+  column-gap: 10px;
+    align-items: center;
+}
+.add{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 50px;
+    border-radius: 5%;
+    
+    border: 1px solid black;
+    
+}
+.remove{
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 50px;
+  border-radius: 5%;
+  
+  border: 1px solid black;
+  
+}
